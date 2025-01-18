@@ -292,7 +292,7 @@
     .container-footer-skill {
       margin-top: 31px;
       display: flex;
-      gap: 16px;
+      gap: 20px;
     }
 
     .skill-name,
@@ -306,13 +306,13 @@
       margin-top: 9px;
       width: 100%;
       background: #ffffff;
-      height: 48px;
+      height: 45px;
       border-radius: 8px;
       border: 1px solid rgba(156, 163, 170, 0.48);
     }
 
     .skill-button {
-      padding: 16px 20px;
+      padding: 14px 20px;
       background: #2f3337;
       border-radius: 8px;
       color: #ffffff;
@@ -321,7 +321,7 @@
     }
 
     #screen6 {
-      margin-top: 112px;
+      margin-top: 114px;
     }
 
     .container-contacts {
@@ -343,7 +343,7 @@
     .title-address,
     .title-phone,
     .title-mail {
-      margin-top: 235px;
+      margin-top: 234px;
       font-size: 20px;
       font-weight: 500;
     }
@@ -541,16 +541,14 @@
         <div class="footer-skill-header">Add new skill</div>
         <div class="container-footer-skill">
           <div class="skill-name">
-            <div class="skill-name-header">Skill name</div>
-            <div class="skill-name-box"></div>
+            <label for="skill-name-box">Skill name</label>
+            <input class="skill-name-box" id="skill-name-box" type="text" />
           </div>
           <div class="skill-percent">
-            <div class="skill-percent-header">
-              Skill proficiency percentage, %
-            </div>
-            <div class="skill-percent-box"></div>
+            <label for="skill-percent-box">Skill proficiency percentage, %</label>
+            <input class="skill-percent-box" id="skill-percent-box" type="number" />
           </div>
-          <div class="skill-button">Add</div>
+          <button class="skill-button" aria-label="add skill">Add</button>
         </div>
       </div>
     </section>
@@ -558,7 +556,7 @@
     <section id="screen6">
       <div class="header">Contacts</div>
       <div class="container-contacts">
-        <div class="contacts-box-1">
+        <a href="#" class="contacts-box-1">
           <img class="ImagePinAddress" width="40px" />
           <div class="text-address">
             <div class="title-address">Address</div>
@@ -566,7 +564,7 @@
               16 Lva Tolstogo str., Moscow
             </div>
           </div>
-        </div>
+        </a>
         <a href="#" class="contacts-box-2">
           <img class="ImagePinPhone" width="40px" />
           <div class="text-phone">
@@ -574,25 +572,29 @@
             <div class="description-phone">+7 (000) 000 00 00</div>
           </div>
         </a>
-        <div class="contacts-box-3">
+        <a href="#" class="contacts-box-3">
           <img class="ImagePinMail" width="40px" />
           <div class="text-mail">
             <div class="title-mail">E-Mail</div>
             <div class="description-mail">myemail@yandex.ru</div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
     <footer id="screen7">
       <div class="container-footer">
         <div class="icons-footer">
-          <img class="ImageInstagramFooter" width="24px" />
-          <img class="ImageGithubFooter" width="24px" />
-          <img class="ImageTwitterFooter" width="24px" />
-          <img class="ImageLinkedinFooter" width="24px" />
+          <a href="https://en.wikipedia.org/wiki/Instagram" aria-label="link to instagram"><img
+              class="ImageInstagramFooter" alt="instagram icon" width="24px" /></a>
+          <a href="https://github.com/" aria-label="link to github"><img class="ImageGithubFooter" alt="github icon"
+              width="24px" /></a>
+          <a href="https://ru.wikipedia.org/wiki/Твиттер" aria-label="link to twitter"><img class="ImageTwitterFooter"
+              alt="twitter icon" width="24px" /></a>
+          <a href="https://ru.wikipedia.org/wiki/LinkedIn" aria-label="link to linkedin"><img
+              class="ImageLinkedinFooter" alt="linkedin icon" width="24px" /></a>
         </div>
-        <div class="data-footer">© 2023</div>
+        <div class="data-footer">© 2025</div>
       </div>
     </footer>
   </div>
